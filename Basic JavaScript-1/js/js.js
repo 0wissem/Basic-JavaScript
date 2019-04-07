@@ -8,10 +8,10 @@ function underlined() {
     document.getElementById("ra").style.textDecoration = "underline"
 }
 function myfunction(selectTag) {
-    var listValue = selectTag.options[selectTag.selectedIndex].text;
+    var listValue = selectTag.options[selectTag.selectedIndex].value;
     document.getElementById("ra").style.fontSize= listValue;
 }
-function myfunction2(selectTag) {
-    var listValuee = selectTag.options[selectTag.selectedIndex].text;
-    document.getElementById("ra").style.fontFamily= listValuee;
+function myfunction2(e) {
+
+    document.getElementById("ra").style.fontFamily= e.value;
 }
